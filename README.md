@@ -13,18 +13,18 @@ Búið er að setja síðuna upp [hér](https://www.youtube.com/watch?v=dQw4w9Wg
 ## npm scripts
 
 Hægt er að keyra eftirfarandi script til að prufa verkefnið
-### `npm start` 
-Keyrir síðuna
+### `npm start`.   
+Keyrir síðuna.  
 
-### `npm test`
-Keyrir test
+### `npm test`.  
+Keyrir test.  
 
-### `npm run lint`
-Lint-ar verkefnið 
+### `npm run lint`.  
+Lint-ar verkefnið   
+   
+## Test.  
+ WIP.  
 
-## Test
- WIP
-
-## LINT
- WIP
+## LINT   
+ WIP.  
 
