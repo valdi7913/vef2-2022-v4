@@ -12,13 +12,13 @@ export function Event() {
     const [isLoading, setIsLoading] = useState(false);
     const [errors, setErrors] = useState(null);
 
-    const url = ` http://localhost:3001/events/${id}`;
 
     useEffect(() => {
         async function getData() {
             setIsLoading(true);
             setErrors(null);
             try {
+                const url = `https://vef2-20222-v3-synilausn.herokuapp.com/events/${id}`;
                 const data = await fetch(url);
                 const eventData = await data.json();
                 setEvent(eventData);

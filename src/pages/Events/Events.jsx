@@ -1,6 +1,7 @@
 import { LoginFooter } from '../../components/LoginFooter/LoginFooter.jsx';
 import { ListEvent } from '../../components/ListEvent/ListEvent.jsx';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { AuthenticationContext } from '../../components/AuthContext/AuthContext.jsx';
 import s from './Events.module.scss';
 export function Events() {
     const [events, setEvents] = useState([]);
@@ -12,8 +13,8 @@ export function Events() {
             setIsLoading(true);
             setErrors(null);
             try {
-                const data2 = await fetch('http://localhost:3001/events');
-                const eventsData = await data2.json();
+                const data = await fetch('https://vef2-20222-v3-synilausn.herokuapp.com/events');
+                const eventsData = await data.json();
                 setEvents(eventsData.items);
             } catch (err) {
                 setErrors(`Villa kom upp: ${err.message}`);

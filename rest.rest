@@ -10,4 +10,4 @@ GET http://{{HOST}}/events
 
 ### GET /event/{id}
 
-GET http://{{HOST}}/events/2
+GET http://{{HOST}}/events/3
