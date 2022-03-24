@@ -1,0 +1,10 @@
+.Nav {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: center;
+
+    &__link {
+        textDecoration: 'none',        
+    }
+}

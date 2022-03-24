@@ -1,0 +1,33 @@
+.Event {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        margin: 0 auto;
+        align-items: start;
+        max-width: 35%;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -1rem;
+        margin-bottom: -1rem;
+        padding-bottom: 1rem;
+        max-width: 35%;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    
+    &__description {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+}

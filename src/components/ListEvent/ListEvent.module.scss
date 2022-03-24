@@ -1,0 +1,19 @@
+.Event {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+}

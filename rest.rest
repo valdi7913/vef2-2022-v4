@@ -1,0 +1,13 @@
+@HOST = localhost:3001
+
+### GET / 
+
+GET http://{{HOST}}
+
+### GET /events
+
+GET http://{{HOST}}/events
+
+### GET /event/{id}
+
+GET http://{{HOST}}/events/2

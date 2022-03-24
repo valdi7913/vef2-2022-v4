@@ -1,0 +1,10 @@
+.Login {
+     &__container {
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        margin: 0 auto;
+        align-items: start;
+        max-width: 35%;
+    }
+}
