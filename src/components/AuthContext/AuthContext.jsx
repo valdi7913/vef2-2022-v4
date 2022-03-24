@@ -3,7 +3,7 @@ import React, { useState, createContext } from 'react';
 export const AuthenticationContext = createContext();
 
 const AuthContext = ({ children }) =>{
-  const [registered, setRegistered] = useState({});
+  const [registered, setRegistered] = useState([]);
   const [isLoggedIn, setLoggedIn] = useState(false);
   
   const toggleLogin = () => {
@@ -12,26 +12,13 @@ const AuthContext = ({ children }) =>{
 
   }
 
-  const addToRegistrations = (id, comment) => { 
-    const newRegistration = {
-      id: id,
-      athugasemd: comment
-    }
-
-    setRegistered({
-      ...registered,
-      ...newRegistration
-    });
+  const addToRegistrations = (id) => {  
+    console.log('Added id to registrations :>> ', id);
+    setRegistered(old => [...old, id]);
   }
 
   const removeFromRegistrations = (id) => {
-    const newRegistrations = {
-      ...registered
-    };
-
-    delete newRegistrations[id];
-
-    setRegistered(newRegistrations);
+    setRegistered(old => old.filter(registration => registration !== id));
   }
 
 

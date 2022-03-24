@@ -17,8 +17,6 @@ import AuthContext from './components/AuthContext/AuthContext.jsx';
 
 const root = document.getElementById('root')
 
-
-
 ReactDOM.render(
   <AuthContext>
     <App>

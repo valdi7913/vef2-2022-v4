@@ -4,7 +4,7 @@ import { LoginFooter } from './components/LoginFooter/LoginFooter';
 
 function App({ children }) {
   return (
-    <Layout className="App" footer={LoginFooter}>
+    <Layout className="App" title={'Viðburðasíðan'} footer={LoginFooter}>
       { children }
     </Layout>
   );

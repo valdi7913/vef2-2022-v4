@@ -34,11 +34,11 @@ export function Events() {
     }
 
     return (
-        <div>
+        <>
             <div className={s.Events__container}>
                 <h2 className={s.Events__title}>Viðburðir á næstunni</h2>
                 <ul className={s.Events__list}>
-                    {events.length > 0 && events.map((event, i)=> (
+                    {(events ?? []).map((event, i)=> (
                      <li key={i}>
                         <ListEvent event={event}/>
                      </li>
@@ -46,6 +46,6 @@ export function Events() {
                 </ul>
             </div>
             <LoginFooter />
-        </div>
+        </>
     );    
 }

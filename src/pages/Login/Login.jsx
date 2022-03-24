@@ -6,13 +6,14 @@ import s from './Login.module.scss';
 import { AuthenticationContext } from '../../components/AuthContext/AuthContext.jsx';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Button } from '../../components/Button/Button.jsx';
 
 
 export function Login() {
     const navigation = useNavigate();
-    const {isLoggedIn} = useContext(AuthenticationContext);
+    const { isLoggedIn } = useContext(AuthenticationContext);
 
-    if(isLoggedIn){
+    if (isLoggedIn) {
         navigation('/');
     }
 
@@ -23,7 +24,7 @@ export function Login() {
                 <Form>
                     <Input text="Notendanafn" type="text" />
                     <Input text="Lykilorð" type="text" />
-                    <button> Innskrá </button>
+                    <Button> Innskrá </Button>
                 </Form>
                 <Nav />
             </div>
