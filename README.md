@@ -5,10 +5,10 @@ Verkefnið byggir á [sýnilausninni á verkefni 3](https://vef2-20222-v3-synila
 Búið er að setja síðuna upp [hér](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
 
 ## Síður
-*/ er heimasíðan og sýnir alla viðburði
-*/events/:id sýnir upplýsingar um gefna viðburðinn og leyfir innskráðum notenda að skrá sig á hann
-*/login er placeholder síða sem ætti að leyfa notenda að skrá sig inn en það var ekki hluti af verkefninu 
-*/notfound allar aðrar síður redirecta á 404 síðu
+*/ er heimasíðan og sýnir alla viðburði.  
+*/events/:id sýnir upplýsingar um gefna viðburðinn og leyfir innskráðum notenda að skrá sig á hann.      
+*/login er placeholder síða sem ætti að leyfa notenda að skrá sig inn en það var ekki hluti af verkefninu.      
+*/notfound allar aðrar síður redirecta á 404 síðu.    
 
 ## npm scripts
 
