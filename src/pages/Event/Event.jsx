@@ -37,7 +37,7 @@ export function Event() {
         return (<h1> {errors} </h1>);
     }
     if (!event || isLoading) {
-        return (<h1> loading ... </h1>);
+        return (<h1 className={s.Event__loading}> loading ... </h1>);
     }
     return (
         <>

@@ -1,7 +1,6 @@
 import { LoginFooter } from '../../components/LoginFooter/LoginFooter.jsx';
 import { ListEvent } from '../../components/ListEvent/ListEvent.jsx';
 import { useState, useEffect, useContext } from 'react';
-import { AuthenticationContext } from '../../components/AuthContext/AuthContext.jsx';
 import s from './Events.module.scss';
 export function Events() {
     const [events, setEvents] = useState([]);
@@ -27,11 +26,11 @@ export function Events() {
     },[]);
 
     if(isLoading) {
-        return (<h1> loading... </h1>);
+        return (<h1 className={s.Events__loading}> loading... </h1>);
     }
 
     if(errors) {
-        return (<h1> {errors} </h1>);
+        return (<h1 className={s.Events__title}> {errors} </h1>);
     }
 
     return (

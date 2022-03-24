@@ -29,4 +29,21 @@
         font-weight: 400;
         margin-bottom: 1rem;
     }
+    &__loading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        animation: spin 1s linear infinite;
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
 }

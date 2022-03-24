@@ -8,12 +8,9 @@ const AuthContext = ({ children }) =>{
   
   const toggleLogin = () => {
     setLoggedIn(old => !old);
-    console.log("🚀 ~ file: AuthContext.jsx ~ line 10 ~ AuthContext ~ isLoggedIn", isLoggedIn)
-
   }
 
   const addToRegistrations = (id) => {  
-    console.log('Added id to registrations :>> ', id);
     setRegistered(old => [...old, id]);
   }
 
