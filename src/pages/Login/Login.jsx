@@ -24,7 +24,7 @@ export function Login() {
                 <Form>
                     <Input text="Notendanafn" type="text" />
                     <Input text="Lykilorð" type="text" />
-                    <Button> Innskrá </Button>
+                    <Button type="button"> Innskrá </Button>
                 </Form>
                 <Nav />
             </div>
