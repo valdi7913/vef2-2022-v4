@@ -2,7 +2,7 @@
 
 Verkefnið byggir á [sýnilausninni á verkefni 3](https://vef2-20222-v3-synilausn.herokuapp.com/)
 
-Búið er að setja síðuna upp [hér](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
+Búið er að setja síðuna upp [hér](https://valdi-vef2-2022-v4.netlify.app/)
 
 ## Síður
 
