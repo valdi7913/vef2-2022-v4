@@ -1,4 +1,4 @@
-import s from "./Input.module.scss";
+import s from './Input.module.scss';
 
 export function Input({ text, type, onChange }) {
   return (

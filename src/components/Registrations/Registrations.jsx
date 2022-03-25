@@ -1,4 +1,4 @@
-import s from "./Registrations.module.scss";
+import s from './Registrations.module.scss';
 
 export function Registrations({ registrations }) {
   if (registrations && registrations.length === 0) {

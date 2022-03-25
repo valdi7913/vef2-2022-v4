@@ -32,7 +32,3 @@ Lint-ar verkefnið
 Test fyrir componentana EventForm og Registered sem eru notaðir í Event hlutnum
 Fake context var notað í testum
 
-## LINT
-
-Stylelint með stylelint-config-sass-guidelines og 
-Eslint með 

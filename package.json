@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,md,css,scss,less,graphql,gql}'",
+    "prettier": "prettier --write .",
     "lint": "concurrently npm:lint:*",
     "lint:eslint": "eslint ./src/**/*.js ./src/**/*.jsx",
     "lint:stylelint": "stylelint './src/**/*.scss'"

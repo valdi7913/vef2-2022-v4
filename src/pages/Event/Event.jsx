@@ -1,10 +1,10 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { EventForm } from "../../components/EventForm/EventForm.jsx";
-import { LoginFooter } from "../../components/LoginFooter/LoginFooter.jsx";
-import { Nav } from "../../components/Nav/Nav.jsx";
-import { Registrations } from "../../components/Registrations/Registrations.jsx";
-import s from "./Event.module.scss";
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { EventForm } from '../../components/EventForm/EventForm.jsx';
+import { LoginFooter } from '../../components/LoginFooter/LoginFooter.jsx';
+import { Nav } from '../../components/Nav/Nav.jsx';
+import { Registrations } from '../../components/Registrations/Registrations.jsx';
+import s from './Event.module.scss';
 
 export function Event() {
   const { id } = useParams();

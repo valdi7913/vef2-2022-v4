@@ -1,4 +1,4 @@
-import s from "./Button.module.scss";
+import s from './Button.module.scss';
 
 export function Button({ children, ...props }) {
   return (

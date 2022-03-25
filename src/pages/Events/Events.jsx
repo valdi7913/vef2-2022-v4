@@ -1,7 +1,8 @@
-import { LoginFooter } from "../../components/LoginFooter/LoginFooter.jsx";
-import { ListEvent } from "../../components/ListEvent/ListEvent.jsx";
-import { useState, useEffect } from "react";
-import s from "./Events.module.scss";
+import { useEffect, useState } from 'react';
+import { ListEvent } from '../../components/ListEvent/ListEvent.jsx';
+import { LoginFooter } from '../../components/LoginFooter/LoginFooter.jsx';
+import s from './Events.module.scss';
+
 export function Events() {
   const [events, setEvents] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -13,7 +14,7 @@ export function Events() {
       setErrors(null);
       try {
         const data = await fetch(
-          "https://vef2-20222-v3-synilausn.herokuapp.com/events"
+          'https://vef2-20222-v3-synilausn.herokuapp.com/events'
         );
         const eventsData = await data.json();
         setEvents(eventsData.items);

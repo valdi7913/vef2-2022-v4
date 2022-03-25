@@ -1,6 +1,6 @@
-import s from "./Layout.module.scss";
+import s from './Layout.module.scss';
 
-export function Layout({ title, children, footer }) {
+export function Layout({ title, children }) {
   return (
     <div className={s.layout}>
       <header className={s.layout__header}>

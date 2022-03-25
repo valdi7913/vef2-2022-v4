@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import s from "./ListEvent.module.scss";
+import { Link } from 'react-router-dom';
+import s from './ListEvent.module.scss';
 
 export function ListEvent({ event }) {
   return (

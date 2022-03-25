@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import { Form } from "../../components/Form/Form";
-import { Button } from "../../components/Button/Button";
-import { AuthenticationContext } from "../../components/AuthContext/AuthContext";
-import { Input } from "../../components/Input/Input";
+import { useContext } from 'react';
+import { AuthenticationContext } from '../AuthContext/AuthContext.jsx';
+import { Button } from '../Button/Button.jsx';
+import { Form } from '../Form/Form.jsx';
+import { Input } from '../Input/Input.jsx';
 
 export function EventForm({ id }) {
   const {
@@ -27,13 +27,13 @@ export function EventForm({ id }) {
   if (registered && registered.includes(id)) {
     return (
       <>
-        <p style={{ padding: "1rem 0" }}>
-          {" "}
-          þú hefur verið skráð/ur á viðburðinn!{" "}
+        <p style={{ padding: '1rem 0' }}>
+          {' '}
+          þú hefur verið skráð/ur á viðburðinn!{' '}
         </p>
-        <Button type="submit" onClick={unregister}>
-          {" "}
-          Afskrá mig{" "}
+        <Button type='submit' onClick={unregister}>
+          {' '}
+          Afskrá mig{' '}
         </Button>
       </>
     );
@@ -41,10 +41,10 @@ export function EventForm({ id }) {
 
   return (
     <Form>
-      <Input text="Athugasemd" type="textarea" />
-      <Button onClick={register} type="submit">
-        {" "}
-        Skrá mig{" "}
+      <Input text='Athugasemd' type='textarea' />
+      <Button onClick={register} type='submit'>
+        {' '}
+        Skrá mig{' '}
       </Button>
     </Form>
   );
