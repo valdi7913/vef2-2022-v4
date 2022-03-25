@@ -1,6 +1,6 @@
 import { LoginFooter } from '../../components/LoginFooter/LoginFooter.jsx';
 import { ListEvent } from '../../components/ListEvent/ListEvent.jsx';
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import s from './Events.module.scss';
 export function Events() {
     const [events, setEvents] = useState([]);

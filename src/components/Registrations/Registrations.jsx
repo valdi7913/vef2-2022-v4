@@ -7,7 +7,7 @@ export function Registrations({ registrations }) {
     return (
         <ul className={s.Registrations__container}>
             {registrations && registrations.map(reg => (
-                <li className={s.Registrations__item} key={reg}>
+                <li className={s.Registrations__item} key={reg.name}>
                     <p className={s.Registrations__name}>{reg.name}:</p>
                     <p className={s.Registrations__comment}>{reg.comment}</p>
                 </li>

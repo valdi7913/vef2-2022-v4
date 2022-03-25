@@ -7,7 +7,6 @@ import { Input } from '../../components/Input/Input';
 export function EventForm({ id }) {
 
     const { registered, isLoggedIn, addToRegistrations, removeFromRegistrations } = useContext(AuthenticationContext);
-
     
     const register = () => {
         addToRegistrations(id);
