@@ -1,23 +1,23 @@
 .LoginFooter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 0;
-    margin: 0 auto;
-    min-width: 35%;
-    border-top: 1px solid #e5e5e5;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 35%;
+  padding: 0;
 
-    &__link {
-        margin: 0rem;
-        padding: 0.5rem;
-        color: #5A5C33;
-    }
+  &__link {
+    color: #5a5c33;
+    margin: 0 rem;
+    padding: 0.5rem;
+  }
 
-    &__button {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-    }
+  &__button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
 }

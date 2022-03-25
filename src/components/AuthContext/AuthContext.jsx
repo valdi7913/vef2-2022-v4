@@ -1,29 +1,36 @@
-import React, { useState, createContext } from 'react';
+import React, { useState, createContext } from "react";
 
 export const AuthenticationContext = createContext();
 
-const AuthContext = ({ children }) =>{
+const AuthContext = ({ children }) => {
   const [registered, setRegistered] = useState([]);
   const [isLoggedIn, setLoggedIn] = useState(false);
-  
-  const toggleLogin = () => {
-    setLoggedIn(old => !old);
-  }
 
-  const addToRegistrations = (id) => {  
-    setRegistered(old => [...old, id]);
-  }
+  const toggleLogin = () => {
+    setLoggedIn((old) => !old);
+  };
+
+  const addToRegistrations = (id) => {
+    setRegistered((old) => [...old, id]);
+  };
 
   const removeFromRegistrations = (id) => {
-    setRegistered(old => old.filter(registration => registration !== id));
-  }
-
+    setRegistered((old) => old.filter((registration) => registration !== id));
+  };
 
   return (
-    <AuthenticationContext.Provider value={{ toggleLogin, isLoggedIn, registered, addToRegistrations, removeFromRegistrations }}>
+    <AuthenticationContext.Provider
+      value={{
+        toggleLogin,
+        isLoggedIn,
+        registered,
+        addToRegistrations,
+        removeFromRegistrations,
+      }}
+    >
       {children}
-    </AuthenticationContext.Provider>  
+    </AuthenticationContext.Provider>
   );
-}
+};
 
 export default AuthContext;

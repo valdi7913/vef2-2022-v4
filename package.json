@@ -18,8 +18,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,md,css,scss,less,graphql,gql}'",
     "lint": "concurrently npm:lint:*",
-    "lint:eslint": "eslint ./src/**/*.jsx ./src/**/*.scss"
+    "lint:eslint": "eslint ./src/**/*.js ./src/**/*.jsx",
+    "lint:stylelint": "stylelint './src/**/*.scss'"
   },
   "eslintConfig": {
     "extends": [
@@ -40,8 +42,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "concurrently": "^7.0.0",
     "eslint": "^8.11.0",
-    "react-test-renderer": "^17.0.2"
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "prettier": "^2.6.1",
+    "react-test-renderer": "^17.0.2",
+    "stylelint": "^14.6.1",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-react-native": "^2.4.0"
   }
 }

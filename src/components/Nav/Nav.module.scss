@@ -1,11 +1,11 @@
 .Nav {
-    display: flex;
-    flex-direction: column;
-    justify-items: start;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
 
-    &__link {
-        padding: 0.4rem 1rem;
-        color: #5A5C33;
-    }
+  &__link {
+    color: #5a5c33;
+    padding: 0.4rem 1rem;
+  }
 }

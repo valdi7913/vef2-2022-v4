@@ -1,49 +1,52 @@
 .Event {
-    &__container {
-        display: flex;
-        flex-direction: column;
-        justify-items: flex-start;
-        margin: 0 auto;
-        align-items: flex-start;
-    }
+  &__container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin: 0 auto;
+  }
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: -1rem;
-        margin-bottom: -1rem;
-        padding-bottom: 1rem;
-        max-width: 35%;
-    }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -1rem;
+    margin-top: -1rem;
+    max-width: 35%;
+    padding-bottom: 1rem;
+  }
 
-    &__title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  &__loading {
+    align-items: center;
+    /* stylelint-disable */
+    animation: spin 1s linear infinite;
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
-    
-    &__description {
-        font-size: 1.2rem;
-        font-weight: 400;
-        margin-bottom: 1rem;
-    }
-    &__loading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        animation: spin 1s linear infinite;
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    }
+    /* stylelint-enable */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 }
